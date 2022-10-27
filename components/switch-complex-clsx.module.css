@@ -1,0 +1,16 @@
+.switch {
+  @apply 
+    relative
+    inline-flex
+    h-6
+    w-11 
+    items-center 
+    rounded-full 
+    bg-gray-200;
+}
+
+.checked {
+  @apply bg-blue-600
+   h-12
+   w-20;
+}

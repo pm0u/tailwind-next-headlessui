@@ -32,3 +32,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Paul's notes
+Some useful VSCode extensions to see the intellisense, etc
+
+CSS Modules `clinyong.vscode-css-modules`
+
+Tailwind intellisense `bradlc.vscode-tailwindcss`
+
+This will give you hover definitions of tailwind classes, autocomplete suggestions for tailwind classes, and autocomplete/intellisense for classes coming out of css modules.
+
+### Example components
+
+**switch-selectors.js**
+
+This file is pretty much pulled exactly from the headless ui docs
+
+**switch-complex.js**
+
+This file toggles multiple classes and has some questionable formatting (notes in file)
+
+**switch-selectors-complex-clsx**
+
+This file utilizes tailwind's `@apply` directive and CSS modules to create a bit cleaner and more clear logic around what changes when the state of the toggle changes.
+
