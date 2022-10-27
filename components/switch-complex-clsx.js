@@ -13,10 +13,12 @@ export const SwitchComplexClsx = () => {
       <Switch
         checked={enabled}
         onChange={setEnabled}
+        // this could also read:
+        // className={clsx(styles.switch, enabled && styles.checked )}
         className={clsx(styles.switch, { [styles.checked]: enabled })}
       >
         <span className="sr-only">Enable notifications</span>
-        <span className="inline-block h-4 w-4 transform rounded-full bg-white transition ui-checked:translate-x-6 ui-not-checked:translate-x-1 ui-checked:h-8 ui-checked:w-8" />
+        <span className={clsx(styles.dot, enabled && styles.dotChecked)} />
       </Switch>
     </div>
   )

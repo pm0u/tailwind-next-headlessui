@@ -6,6 +6,7 @@
     w-11 
     items-center 
     rounded-full 
+    transition-colors
     bg-gray-200;
 }
 
@@ -13,4 +14,14 @@
   @apply bg-blue-600
    h-12
    w-20;
+}
+
+.dot {
+  @apply inline-block h-4 w-4 transform rounded-full bg-white transition translate-x-1
+}
+
+.dotChecked {
+  @apply translate-x-6
+    w-8
+    h-8;
 }
